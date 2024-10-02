@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*main grid */
+.main-container {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+}
+
+/* sidebar section */
+.sidebar-container {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    background-color: rgb(233, 162, 220);
+    color: white;
+    width: 220px;
+    height: 100%;
+    overflow: auto;
+}
+
+#sidebar, #sidebar2, #sidebar1 {
+    padding: 5px;
+}
+
+#sidebar1 {
+    font-size: 28px;
+    padding-bottom: 30px;
+}
+
+#sidebar2 {
+    padding-bottom: 370px;
+}
+
+.dashboard-container, 
+.home-container, 
+.profile-container, 
+.message-container,
+.history-container,
+.task-container,
+.community-container,
+.settings-container,
+.help-container,
+.privacy-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#home, 
+#profile, 
+#message, 
+#history,
+#task,
+#community,
+#settings,
+#help,
+#privacy {
+    font-size: 27px;
+    padding-right: 7px;
+}
+
+#dashboard {
+    font-size: 32px;
+}
+
+/* header section */
+.header-container {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: rgb(238, 192, 236);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 8px;
+}
+
+.space {
+    background-color: rgb(200, 200, 200);
+    border-radius: 20px;
+    height: 20px;
+    width: 820px;
+    margin: 2px;
+}
+
+.cat1 {
+    border-radius: 35px;
+    width: 42px;
+    height: 42px;
+    justify-self: center;
+    
+}
+
+.cat2 {
+    border-radius: 35px;
+    width: 65px;
+    height: 65px;
+    grid-row: 2 / span 3;
+    justify-self: center;
+
+}
+
+#search {
+    font-size: 20px;
+    justify-self: left;
+    margin-left: 20px;
+    margin-top: 2px;
+}
+
+#bell {
+    font-size: 18px;
+    margin-top: 2px;
+    justify-self: right;
+}
+
+.name1 {
+    font-size: 12px;
+    margin-top: 2px;
+    justify-self: left;
+    font-weight: bold;
+}
+
+.greeting {
+    font-size: 13px;
+    align-self: end;
+    font-weight: bold;
+    grid-row: 2;
+}
+
+.name2 {
+    font-size: 20px;
+    font-weight: bold;
+    align-self: start;
+}
+
+.new, .share, .upload {
+    grid-row: 2 / span 2;
+    justify-self: center;
+    align-self: end;
+    background-color: rgb(178, 111, 163);
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+/* dashboard section */
+.top-titles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    background-color: rgb(251, 180, 224);
+}
+
+.news {
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+
+/*stories section*/
+
+.body-container2 {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    background-color: rgb(251, 180, 224);
+}
+
+.zeus {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.persephone {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.posiden {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.hades {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.pandora {
+    grid-column: 2;
+    grid-row: 2; 
+}
+
+.hercules {
+    grid-column: 2;
+    grid-row: 3; 
+}
+
+.hercules, .hades, .zeus, .pandora, .persephone, .posiden {
+    padding: 25px;
+    margin: 20px;
+    width: 320px;
+    height: 170px;
+    background-color: rgb(225, 151, 195);
+    border-radius: 8px;
+    border-left: 20px solid rgb(208, 94, 162);
+    align-self: start;
+    justify-self: center; 
+}
+
+.story-title {
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+.story {
+    font-size: 14px;
+    padding-bottom: 45px;
+}
+
+.story1 {
+    font-size: 14px;
+    padding-bottom: 40px;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 22px;
+}
+
+#one {
+    padding-right: 5px;
+}
+
+#two {
+    padding-right: 5px;
+}
+
+ /* announcements section */
+
+.announcements-container {
+    box-sizing: border-box;
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    background-color: rgb(233, 199, 226);
+    width: 320px;
+    height: 260px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+.announcements {
+    padding-right: 204px;
+    font-size: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.maintenance{
+    grid-column-start: 3;
+    grid-row: 1;
+    border-bottom: 1px solid #e49dc1;
+    padding-bottom: 9px;
+}
+
+.community {
+    grid-column-start: 3;
+    grid-row: 1;
+    border-bottom: 1px solid #e49dc1;
+    padding-bottom: 9px;
+    padding-top: 9px;
+}
+
+.terms {
+    grid-column-start: 3;
+    grid-row: 1;
+    padding-top: 9px;
+    padding-bottom: 9px;
+
+}
+
+.title {
+    font-weight: bold;
+}
+
+/* trending section */
+
+.trending-container {
+    grid-column: 3;
+    grid-row: 2 / span 3;
+}
+
+.trending {
+    margin-top: 60px;
+    padding-left: 14px;
+    font-size: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+
+}
+
+.tiger, .swan, .whale, .dog {
+    border-radius: 20px;
+    width: 60px;
+    height: 60px;
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.trending-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-rows: auto; 
+    width: 320px;
+    height: 320px;
+    gap: 0; 
+    margin-bottom: 20px; 
+    margin-left: 14.5px;
+    margin-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: rgb(247, 211, 246); 
+    border-radius: 10px;
+}
+
+.account1 {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0;
+    align-self: center;
+    justify-self: start;
+    font-size: 16px;
+}
+
+.text1 {
+    font-size: 14px;
+    color: rgb(123, 99, 145);
+}
+
+.tiger {
+    background-color: rgb(238, 238, 175);
+}
+
+.swan {
+    background-color: rgb(185, 134, 232);
+}
+
+.whale {
+    background-color: bisque;
+}
+
+.dog {
+    background-color: rgb(222, 138, 107);
+}
