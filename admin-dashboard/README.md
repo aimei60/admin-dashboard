@@ -12,7 +12,7 @@ I created a lovely Admin Dashboard using HTML & CSS only. This project is design
 # Credits
 - My design was inspired by The Odin Project's Admin Dashboard project.
 - Icons were taken from Material icons
-## Icons Credit
+## Icons Credits
 - The "Cute Dog" icon used in this project is created by [IconArchive](https://www.iconarchive.com/show/cute-animal-icons-by-iconarchive/Cute-Dog-icon.html).
 - The "Tiger" icon used in this project is created by [Google](https://www.iconarchive.com/show/noto-emoji-animals-nature-icons-by-google/22224-tiger-icon.html).
 - The "Whale" icon used in this project is designed by [Freepik](https://www.freepik.com/icon/whale_146676). 
