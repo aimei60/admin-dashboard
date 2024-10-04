@@ -16,5 +16,5 @@ I created a lovely Admin Dashboard using HTML & CSS only. This project is design
 # Screenshot
 Here is a preview of the Admin Dashboard
 
-![Screenshot of my dashboard](admin-dashboard/screenshots/screenshot.png)
+![Screenshot of my dashboard](screenshots/screenshot.png)
 
