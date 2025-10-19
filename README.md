@@ -3,7 +3,7 @@
 I created an Admin Dashboard using HTML & CSS only. The template was provided by **The Odin Project**. This project is designed to showcase how to create a structured dashboard interface without using JavaScript or external libraries.
 
 ## Live Demo
-[**View the live project here**](https://aimei60.github.io/css-html-projects/)
+[**View the live project here**](https://aimei60.github.io/admin-dashboard/)
 
 ## Technologies Used
 
