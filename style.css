@@ -71,9 +71,10 @@
 }
 
 .settings-container {
-    margin-top: 350px; /* adjust space size */
+  margin-top: 24px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255,255,255,.35);
 }
-
 /* header section */
 .header-container {
     grid-column: 2;
