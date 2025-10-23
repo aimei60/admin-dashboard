@@ -1,11 +1,16 @@
-* {
-    margin: 0;
-    box-sizing: border-box;
+html, 
+body { 
+    height: 100%; 
+}
+
+* { 
+    box-sizing: border-box; 
 }
 
 body {
+  margin: 0;
   background: rgb(251, 180, 224);
-  min-height: 100dvh;
+  min-height: 100vh;
 }
 
 /*main grid */
@@ -13,6 +18,7 @@ body {
     display: grid;
     grid-template-columns: 220px 1fr;
     grid-template-rows: auto 1fr;
+    min-height: 100vh;
 }
 
 /* sidebar section */
@@ -31,7 +37,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 8px; 
-    min-height: 100dvh;
+    min-height: 100%;
     box-sizing: border-box;
 }
 
@@ -90,11 +96,11 @@ body {
     grid-row: 1;
     background-color: rgb(207, 151, 194);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    padding: 8px;
+    grid-template-rows: auto auto;
+    gap: 8px;
+    padding: 8px 12px;
 }
 
 .space {
@@ -171,9 +177,10 @@ body {
 /* dashboard section */
 .top-titles {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between; 
-    background-color: rgb(251, 180, 224);
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    background: transparent;
 }
 
 .news {
@@ -185,13 +192,24 @@ body {
 
 /*stories section*/
 
+.body-container {
+  grid-column: 2;
+  grid-row: 2;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  align-content: start;
+  background: inherit;
+}
+
 .body-container2 {
     display: grid;
-    grid-template-columns: 2fr 2fr 1fr;
-    grid-template-rows: repeat(3, auto);
-    background-color: rgb(251, 180, 224);
-    gap: 20px;
-    background: transparent;  
+    grid-template-columns: 2fr 2fr 320px;
+    grid-template-rows: auto auto auto;
+    gap: 20px 20px;
+    align-content: start;
+    row-gap: 16px;
+    column-gap: 20px;
+    background: transparent;
 }
 
 .zeus {
@@ -225,11 +243,12 @@ body {
 }
 
 .hercules, .hades, .zeus, .pandora, .persephone, .posiden {
-    padding: 25px;
-    width: 320px;
-    background-color: rgb(225, 151, 195);
+    padding: 20px;
+    width: 100%;
+    max-width: 360px;
+    background: rgb(225,151,195);
     border-radius: 8px;
-    border-left: 20px solid rgb(208, 94, 162);
+    border-left: 20px solid rgb(208,94,162);
     align-self: start;
     justify-self: center;
 }
@@ -253,7 +272,7 @@ body {
 .icons {
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    gap: 6px;
     font-size: 22px;
 }
 
@@ -266,23 +285,37 @@ body {
 }
 
  /* announcements section */
-
 .announcements-container {
     box-sizing: border-box;
     grid-column: 3;
     grid-row: 1 / span 2;
     background-color: rgb(180, 126, 169);
-    width: 320px;
-    margin: 15px;
-    padding: 20px 25px;
+    width: 100%;
+    max-width: 320px;
     border-radius: 10px;
+    padding: 15px 25px 8px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
 }
 
 .announcements {
-    padding-right: 204px;
     font-size: 20px;
     padding-top: 8px;
     padding-bottom: 8px;
+    padding-right: 0;
+    margin: 0;
+}
+
+.trending {
+    margin-top: 8px !important;
+}
+
+.news, 
+.announcements { 
+    margin: 0; 
+    padding: 8px 0; 
 }
 
 .maintenance{
@@ -304,8 +337,8 @@ body {
     grid-column-start: 3;
     grid-row: 1;
     padding-top: 9px;
-    padding-bottom: 9px;
-
+    padding-bottom: 0;
+    border-bottom: none;
 }
 
 .title {
@@ -316,16 +349,14 @@ body {
 
 .trending-container {
     grid-column: 3;
-    grid-row: 2 / span 3;
+    grid-row: 3;
+    align-self: start;
+    margin: 0 15px; 
 }
 
 .trending {
-    margin-top: 55px;
-    padding-left: 14px;
-    font-size: 20px;
-    padding-bottom: 5px;
-    margin-bottom: 0;
-
+    margin: 8px 0;
+    padding-left: 4px;
 }
 
 .tiger, .swan, .whale, .dog {
@@ -339,17 +370,14 @@ body {
 
 .trending-grid {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-auto-rows: auto; 
-    width: 320px;
-    gap: 0; 
-    margin-bottom: 20px; 
-    margin-left: 14.5px;
-    margin-right: 15px;
-    padding-top: 15px;
-    padding-bottom: 10px;
-    background-color: rgb(210, 125, 178); 
+    grid-template-columns: 60px 2fr;
+    gap: 10px 12px;
+    background: rgb(210,125,178);
     border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    max-width: 320px;
+    margin: 0;
 }
 
 .account1 {
