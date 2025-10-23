@@ -207,10 +207,19 @@ body {
     grid-template-rows: auto auto auto;
     gap: 20px 20px;
     align-content: start;
-    row-gap: 16px;
+    row-gap: 24px;
     column-gap: 20px;
     background: transparent;
 }
+
+.stories-grid {
+  grid-column: 1 / 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-content: start;
+}
+
 
 .zeus {
     grid-column: 1;
@@ -284,9 +293,16 @@ body {
     padding-right: 5px;
 }
 
+.right-section {
+  grid-column: 3;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
  /* announcements section */
 .announcements-container {
-    box-sizing: border-box;
     grid-column: 3;
     grid-row: 1 / span 2;
     background-color: rgb(180, 126, 169);
@@ -294,6 +310,7 @@ body {
     max-width: 320px;
     border-radius: 10px;
     padding: 15px 25px 8px;
+    padding-bottom: 12px; 
     margin-bottom: 0;
     display: flex;
     flex-direction: column;
@@ -349,8 +366,9 @@ body {
 
 .trending-container {
     grid-column: 3;
-    grid-row: 3;
+    grid-row: 2;
     align-self: start;
+    margin-top: 12px;
     margin: 0 15px; 
 }
 
