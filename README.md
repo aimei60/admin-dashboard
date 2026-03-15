@@ -7,8 +7,8 @@ I created an Admin Dashboard using HTML & CSS only. The template was provided by
 
 ## Technologies Used
 
-- HTML5
-- CSS3 (Flexbox & Grid)
+- HTML
+- CSS (Flexbox & Grid)
 
 ## What I learned
 
